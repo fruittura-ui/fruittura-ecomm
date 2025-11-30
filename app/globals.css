@@ -121,8 +121,13 @@
   * {
     @apply border-border outline-ring/50;
   }
+
+  html {
+    @apply overflow-x-hidden;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-x-hidden w-full max-w-[100vw];
   }
 }
 
@@ -150,6 +155,7 @@
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }

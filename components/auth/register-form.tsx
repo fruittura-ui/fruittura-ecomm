@@ -140,7 +140,7 @@ export function RegisterForm() {
                 <Input
                   id="phone"
                   type="tel"
-                  placeholder="+91 98765 43210"
+                  placeholder="+918446896952"
                   className="pl-10"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
@@ -175,15 +175,14 @@ export function RegisterForm() {
                     {[1, 2, 3, 4].map((level) => (
                       <div
                         key={level}
-                        className={`h-1 flex-1 rounded-full transition-colors ${
-                          strength >= level
+                        className={`h-1 flex-1 rounded-full transition-colors ${strength >= level
                             ? level <= 1
                               ? "bg-destructive"
                               : level <= 2
                                 ? "bg-amber-500"
                                 : "bg-green-500"
                             : "bg-muted"
-                        }`}
+                          }`}
                       />
                     ))}
                   </div>

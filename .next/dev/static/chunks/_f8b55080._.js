@@ -433,7 +433,7 @@ function LoginForm() {
                 id: "1",
                 email: formData.email,
                 name: "Demo User",
-                phone: "+91 98765 43210"
+                phone: "+918446896952"
             });
             router.push("/profile");
         } else {

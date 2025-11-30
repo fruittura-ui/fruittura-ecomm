@@ -56,7 +56,7 @@ const mockAddresses = [
     city: "Mumbai",
     state: "Maharashtra",
     pincode: "400058",
-    phone: "+91 98765 43210",
+    phone: "+918446896952",
     isDefault: true,
   },
   {
@@ -67,7 +67,7 @@ const mockAddresses = [
     city: "Bangalore",
     state: "Karnataka",
     pincode: "560066",
-    phone: "+91 98765 43210",
+    phone: "+918446896952",
     isDefault: false,
   },
 ]
@@ -81,7 +81,7 @@ export function ProfileContent() {
   const [profileData, setProfileData] = useState({
     name: user?.name || "Demo User",
     email: user?.email || "demo@fruittura.com",
-    phone: user?.phone || "+91 98765 43210",
+    phone: user?.phone || "+918446896952",
   })
 
   const [notifications, setNotifications] = useState({
@@ -151,9 +151,8 @@ export function ProfileContent() {
                   <button
                     key={item.id}
                     onClick={() => setActiveTab(item.id)}
-                    className={`w-full flex items-center justify-between px-4 py-3 rounded-lg transition-colors ${
-                      activeTab === item.id ? "bg-primary/10 text-primary" : "text-foreground hover:bg-muted"
-                    }`}
+                    className={`w-full flex items-center justify-between px-4 py-3 rounded-lg transition-colors ${activeTab === item.id ? "bg-primary/10 text-primary" : "text-foreground hover:bg-muted"
+                      }`}
                   >
                     <span className="flex items-center gap-3">
                       <item.icon className="h-5 w-5" />
@@ -265,11 +264,10 @@ export function ProfileContent() {
                           </div>
                           <div className="text-right">
                             <span
-                              className={`inline-block px-3 py-1 rounded-full text-sm ${
-                                order.status === "Delivered"
+                              className={`inline-block px-3 py-1 rounded-full text-sm ${order.status === "Delivered"
                                   ? "bg-green-100 text-green-700"
                                   : "bg-amber-100 text-amber-700"
-                              }`}
+                                }`}
                             >
                               {order.status}
                             </span>
@@ -360,9 +358,8 @@ export function ProfileContent() {
                     {mockAddresses.map((address) => (
                       <div
                         key={address.id}
-                        className={`border rounded-lg p-4 relative ${
-                          address.isDefault ? "border-primary" : "border-border"
-                        }`}
+                        className={`border rounded-lg p-4 relative ${address.isDefault ? "border-primary" : "border-border"
+                          }`}
                       >
                         {address.isDefault && (
                           <span className="absolute top-2 right-2 bg-primary text-primary-foreground text-xs px-2 py-0.5 rounded">

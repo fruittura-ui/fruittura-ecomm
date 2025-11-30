@@ -95,8 +95,10 @@ export default function TermsPage() {
                 <h2 className="text-xl font-semibold text-foreground mb-4">9. Contact Us</h2>
                 <p className="text-muted-foreground leading-relaxed">
                   If you have any questions about these Terms of Service, please contact us at{" "}
-                  <a href="mailto:legal@fruittura.com" className="text-primary hover:underline">
-                    legal@fruittura.com
+                  <a href="mailto:Info@fruittura.in
+" className="text-primary hover:underline">
+                    Info@fruittura.in
+
                   </a>
                 </p>
               </section>

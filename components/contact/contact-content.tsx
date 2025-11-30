@@ -61,7 +61,7 @@ export function ContactContent() {
                   <div>
                     <h3 className="font-medium text-foreground">Phone</h3>
                     <p className="text-sm text-muted-foreground mt-1">
-                      +91 98765 43210
+                      +918446896952
                       <br />
                       +91 11 2345 6789
                     </p>
@@ -75,7 +75,7 @@ export function ContactContent() {
                   <div>
                     <h3 className="font-medium text-foreground">Email</h3>
                     <p className="text-sm text-muted-foreground mt-1">
-                      hello@fruittura.com
+                      Info@fruittura.in
                       <br />
                       support@fruittura.com
                     </p>
@@ -146,7 +146,7 @@ export function ContactContent() {
                     <div className="grid sm:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <Label htmlFor="phone">Phone Number</Label>
-                        <Input id="phone" type="tel" placeholder="+91 98765 43210" />
+                        <Input id="phone" type="tel" placeholder="+918446896952" />
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="subject">Subject</Label>

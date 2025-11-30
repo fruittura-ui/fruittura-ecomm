@@ -245,9 +245,9 @@ export function Header() {
                   <span className="sr-only">Menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-80">
+              <SheetContent side="right" className="w-[85vw] sm:w-[350px] overflow-y-auto">
                 <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
-                <div className="flex flex-col gap-6 mt-8">
+                <div className="flex flex-col gap-6 mt-8 h-full">
                   {/* Mobile search */}
                   <form onSubmit={handleSearch}>
                     <Input
@@ -259,17 +259,18 @@ export function Header() {
                   </form>
 
                   {/* Mobile nav links */}
-                  <nav className="flex flex-col gap-4">
+                  {/* Mobile nav links */}
+                  <nav className="flex flex-col gap-4 pb-8 items-center text-center w-full">
                     {navLinks.map((link) =>
                       link.children ? (
-                        <div key={link.label} className="space-y-2">
-                          <span className="font-medium text-foreground">{link.label}</span>
-                          <div className="pl-4 flex flex-col gap-2">
+                        <div key={link.label} className="space-y-2 w-full">
+                          <span className="font-medium text-foreground block">{link.label}</span>
+                          <div className="flex flex-col gap-2 items-center w-full">
                             {link.children.map((child) => (
                               <Link
                                 key={child.href}
                                 href={child.href}
-                                className="text-muted-foreground hover:text-primary transition-colors"
+                                className="text-muted-foreground hover:text-primary transition-colors py-1"
                                 onClick={() => setMobileMenuOpen(false)}
                               >
                                 {child.label}
@@ -281,7 +282,7 @@ export function Header() {
                         <Link
                           key={link.href}
                           href={link.href}
-                          className="text-foreground hover:text-primary transition-colors"
+                          className="text-foreground hover:text-primary transition-colors w-full py-1"
                           onClick={() => setMobileMenuOpen(false)}
                         >
                           {link.label}
